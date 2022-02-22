@@ -1,5 +1,5 @@
 
-<%= form_with model: [book, book_comment] do |f| %>
+<%= form_with model: [book, book_comment], local: false do |f| %>
 <div class="form-group">
   <%= f.text_area :comment, class: 'form-control', rows: '4' %>
 </div>
