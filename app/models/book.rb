@@ -12,13 +12,13 @@ class Book < ApplicationRecord
 
   def self.search_for(content, method)
     if method == 'perfect'
-      Book.where(title :content)
+      Book.where(title: content)
     elsif method == 'forward'
-      Book.where('title like ?', "#{content}%")
+      Book.where('title LIKE ?', content+'%')
     elsif method == 'backward'
-      Book.where('title like ?', "%#{content}")
+      Book.where('title LIKE ?', '%'+content)
     else
-      Book.where('title like ?', "%#{content}%")
+      Book.where('title LIKE ?', '%'+content+'%')
     end
   end
 end
