@@ -12,9 +12,9 @@ import "popper.js"
 import "bootstrap"
 import '@fortawesome/fontawesome-free/js/all';
 import "../stylesheets/application"
-
 import "chartkick"
 import Chart from "chart.js/auto";
+
 global.Chart = Chart;
 
 Rails.start()
