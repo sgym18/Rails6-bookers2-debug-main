@@ -12,8 +12,10 @@ import "popper.js"
 import "bootstrap"
 import '@fortawesome/fontawesome-free/js/all';
 import "../stylesheets/application"
-import "chartkick"
 import Chart from "chart.js/auto";
+
+window.$ = window.jQuery = require('jquery');
+require('packs/jquery.raty.js');
 
 global.Chart = Chart;
 
