@@ -13,9 +13,9 @@ import "bootstrap"
 import '@fortawesome/fontawesome-free/js/all';
 import "../stylesheets/application"
 import Chart from "chart.js/auto";
-
+import "packs/jquery.raty.js"
 window.$ = window.jQuery = require('jquery');
-require('packs/jquery.raty.js');
+
 
 global.Chart = Chart;
 

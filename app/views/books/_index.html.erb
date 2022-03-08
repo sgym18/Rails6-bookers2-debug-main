@@ -21,17 +21,7 @@
         </td>
         <td class="comments-count">コメント数：<%= book.book_comments.count %></td>
         <td>閲覧数：<%= book.impressionist_count %></td>
-        <td id="rate-<%= book.id %>">
-          <script>
-            $('#rate-<%= book.id %>').raty({
-              size: 36,
-              starOff: '<%= asset_path('star-off.png') %>',
-              starOn: '<%= asset_path('star-on.png') %>',
-              readOnly: true,
-              score: <%= book.rate %>,
-            });
-          </script>
-        </td>
+        <td><%= render 'books/rate', book: book %></td>
       </tr>
     <% end %>
   </tbody>
