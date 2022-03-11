@@ -1,24 +1,21 @@
-# README
+# Bookers2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+こちらはDMM WEBCAMPのカリキュラムの応用課題です
+## 主要機能
 
-Things you may want to cover:
+- フォロー機能
+- 検索機能
+- 非同期通信
+- DM機能
+- PV数表示
+- 投稿数グラフ化
+- 5段階評価
+- 一覧ページでの投稿順切り替え
+- タグ機能
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
